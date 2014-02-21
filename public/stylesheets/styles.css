@@ -1,0 +1,14 @@
+#boroughs {
+  stroke: grey;
+	stroke-width: 1px;
+	fill: lightgrey;
+}
+
+svg {
+background:linear-gradient(to left, lightblue 60px, black 10px);
+/*background: black;*/
+background-size: 100px 100px;
+
+/*background: repeating-linear-gradient(to right, white, black 50px, white 50px);
+background-size: 100px 100px;*/
+}
