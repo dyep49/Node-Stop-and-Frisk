@@ -1,3 +1,7 @@
+function isInt(n) {
+   return n % 1 === 0;
+}
+
 var width = 1920,
    height = 1000;
 
@@ -22,3 +26,20 @@ g.append("g")
 	.enter().append("path")
 	.attr("class", function(d){ return d.properties.name; })
 	.attr("d", path);
+
+var stop_projection = d3.select('svg')
+							.selectAll('circle')
+							.data(stop_data["results"])
+
+stop_projection.enter()
+	.append('circle')
+	.attr("cx", projection([-73.94, 40.70])[0])
+	.attr("cy", projection([-73.94, 40.70])[1])
+	.transition()
+	.duration(1000)
+	.attr("cx", function(d){
+		return projection([d.x, d.y])[0]})
+	.attr("cy", function(d){
+		return projection([d.x, d.y])[1]})
+	.attr("r", 1)
+	.style("fill", "black");
