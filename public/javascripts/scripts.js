@@ -41,5 +41,38 @@ stop_projection.enter()
 		return projection([d.x, d.y])[0]})
 	.attr("cy", function(d){
 		return projection([d.x, d.y])[1]})
-	.attr("r", 1)
-	.style("fill", "black");
+	.attr("r", 1.5)
+	.style("fill", function(d){
+		var race = d.race
+		switch(race)
+		{
+			case "A":
+				return "yellow"
+				break;
+			case "B":
+				return "black"
+				break;
+			case "I":
+				return "red"
+				break;
+			case "P":
+				return "brown"
+				break;
+			case "Q":
+				return "beige"
+				break;
+			case "W":
+				return "white"
+				break;
+			case "X":
+				return "purple"
+				break;
+			case "Z":
+				return "orange"
+				break;
+			case "":
+				return "green"
+				break;
+		}
+	}
+	)
