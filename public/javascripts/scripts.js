@@ -1,17 +1,13 @@
-var width = 960,
-   height = 500;
+var width = 1920,
+   height = 1000;
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var nyb = 
-
-  	console.log(nyb)
-
     var projection = d3.geo.mercator()
   					.center([-73.94, 40.70])
-  					.scale(50000)
+  					.scale(90000)
   					.translate([(width) / 2, (height)/2]);
 
 	var path = d3.geo.path()
