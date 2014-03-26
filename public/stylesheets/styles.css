@@ -1,12 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Voces);
+
 #boroughs {
-  stroke: grey;
+  stroke: #8F8F8F;
 	stroke-width: 1px;
-	fill: lightgrey;
+	fill: grey;
 }
 
 svg {
-background:linear-gradient(to left, grey 60px, black 10px);
-/*background: black;*/
+/*background:linear-gradient(to left, grey 60px, black 10px);*/
+background: #344152;
 background-size: 100px 100px;
 
 /*background: repeating-linear-gradient(to right, white, black 50px, white 50px);
@@ -16,4 +18,57 @@ background-size: 100px 100px;*/
 
 h1 {
 	text-align: center;
+}
+
+body{
+	background: #344152;
+}
+
+li{
+	color: white;
+	list-style: none;
+	font-family: 'Voces', cursive;
+	letter-spacing: 1.75px;
+}
+
+li:before{
+	color:green;
+	content:"\2022"; /* /2022 is the numerical unicode for &bull; */
+  font-size:2.5em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+  padding-right:.25em; /* give the bullet some padding from the text Make sure to use em*/
+  position:relative;
+   top:.2em; /* set the vertical position of the bullet if necessary. Make sure to use em or % */
+}
+
+
+#B:before{
+	color:black; /* set color to red */
+}
+
+#Q:before{
+	color:beige; /* set color to red */
+}
+
+#W:before{
+	color:white; /* set color to red */
+}
+
+#A:before{
+	color:yellow; /* set color to red */
+}
+
+#Z:before{
+	color:orange; /* set color to red */
+}
+
+#P:before{
+	color:brown; /* set color to red */
+}
+
+#U:before{
+	color:purple; /* set color to red */
+}
+
+#I:before{
+	color:red; /* set color to red */
 }

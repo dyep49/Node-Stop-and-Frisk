@@ -1,7 +1,19 @@
+var mongodb = require('mongodb');
+
 var express = require('express');
 var app = express();
 
 var nodemon = require('nodemon');
+
+// var url = "mongodb://localhost:27017/test"
+// mongodb.MongoClient.connect(url, function(err, db) {
+//   if (err) {
+//     throw err;
+//   }
+//   console.log("connected to the database");
+// });
+
+
 
 
 app.use(express.static(__dirname + '/public'));
