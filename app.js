@@ -31,7 +31,11 @@ nodemon.on('start', function () {
   console.log('App restarted due to: ', files);
 });
  
-app.listen(3000);
+var port = process.env.PORT || 3000;
+
+app.listen(port);
+
+console.log(port)
 
 app.get('/', function(req, res) {
 
